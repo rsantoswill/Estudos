@@ -1,4 +1,4 @@
-gitfunction cpf(doc) {
+function cpf(doc) {
 let doclimpo = doc.replace(/\D+/g, '');
 cpfArray = Array.from(doclimpo);
 let totalNoveDigitos = 0;
@@ -37,4 +37,4 @@ if(Number(digitoOriginal[1]) === digitoCalculado){
     return "CPF é Falso";
 }
 }
-console.log("Retorno da Função-> "+cpf("FFFFF"));
+console.log("Retorno da Função-> "+cpf("000.000.000-00"));
